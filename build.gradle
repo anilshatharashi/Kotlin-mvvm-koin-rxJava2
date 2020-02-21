@@ -1,0 +1,38 @@
+apply from: 'dependencies.gradle'
+
+buildscript {
+    ext.kotlin_version = '1.3.41'
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    ext {
+        androidBuildToolsVersion = '28.0.3'
+        androidMinSdkVersion = 17
+        androidTargetSdkVersion = 28
+        androidCompileSdkVersion = 28
+        androidApplicationId = 'com.anil_shatharashi.sample_app'
+        androidVersionCode = 1
+        androidVersionName = '1.0'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

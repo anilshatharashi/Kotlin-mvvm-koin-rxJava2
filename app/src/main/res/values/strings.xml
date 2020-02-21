@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">anil_shatharashi</string>
+    <string name="action_settings">Settings</string>
+    <string name="fetch_data">Fetch Data</string>
+    <string name="tenth_char">Tenth Char : %s</string>
+    <string name="every_tenth_char">Every Tenth Char : %s</string>
+    <string name="words_count">Words : %s</string>
+</resources>
